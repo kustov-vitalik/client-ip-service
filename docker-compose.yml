@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  web:
+    container_name: 'shen_web'
+    build:
+      context: .
+      dockerfile: ./infra/docker/Dockerfile
+    ports:
+      - "8088:8088"
